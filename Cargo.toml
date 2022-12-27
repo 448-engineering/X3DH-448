@@ -1,0 +1,14 @@
+[package]
+name = "x3dh-xor"
+version = "0.1.1"
+edition = "2021"
+authors = ["XOR·APPS Developers <developers@xorapps.cloud>"]
+license = "Apache-2.0"
+description = "Extended Triple Diffie-Hellman Key Agreement Library"
+readme = "README.md"
+keywords = ["x3dh", "diffe-hellman", "key exchange", "signal"]
+categories = ["authentication", "cryptography"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
