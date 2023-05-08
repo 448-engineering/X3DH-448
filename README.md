@@ -1,4 +1,4 @@
-### X3DH-XOR
+### X3DH-448
 A fast, minimal dependency, key agreement library based on Extended Triple Diffie-Hellman protocol. It is built in Rust, is fast to compile and uses well established cryptographic libraries (Blake3, ed25519-dalek and x25519-dalek) to offer a secure and reliable key-agreement protocol.
 
 
@@ -25,3 +25,4 @@ containing `32 0xFF` bytes since curve is X25519. `F` is used for cryptographic 
 – `HKDF info` = The info parameter from the `info` parameter outlined at number `3`
 
 
+More changes to improve the security of secrets in memory will be made in the future. Currently this is a great proof-of-concept in creating more information security libraries in Rust
