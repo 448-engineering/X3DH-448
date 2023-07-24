@@ -12,3 +12,17 @@ categories = ["authentication", "cryptography"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+arrayvec = { version = "0.7.4", default-features = false, features = [
+    "zeroize",
+] }
+blake3 = { version = "1.4.1", default-features = false }
+ed25519-dalek = { version = "2.0.0-rc.3", features = [
+    "signature",
+    "zeroize",
+    "rand_core",
+] }
+humantime = "2.1.0"
+memsecurity = { version = "2.1.0", features = ["symm_asymm", "random"] }
+tai64 = { version = "4.0.0", features = ["zeroize"] }
+x25519-dalek = { version = "2.0.0-rc.3", features = ["zeroize", "static_secrets", "getrandom"] }
+zeroize = "1.6.0"
