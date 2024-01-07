@@ -1,9 +1,9 @@
 [package]
 name = "x3dh-448"
-version = "1.0.0-alpha1"
+version = "1.0.0-alpha2"
 edition = "2021"
 authors = ["448 ENGINEERING DEVELOPERS <superuser@448.africa>"]
-license = "AGPL-3.0"
+license = "MPL-2.0"
 description = "Extended Triple Diffie-Hellman Key Agreement Library"
 readme = "README.md"
 keywords = ["x3dh", "diffe-hellman", "key exchange", "signal"]
@@ -12,17 +12,8 @@ categories = ["authentication", "cryptography"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-arrayvec = { version = "0.7.4", default-features = false, features = [
-    "zeroize",
+borsh = { version = "1.1.0", default-features = false, features = [
+    "borsh-derive",
+    "derive",
 ] }
-blake3 = { version = "1.4.1", default-features = false }
-ed25519-dalek = { version = "2.0.0-rc.3", features = [
-    "signature",
-    "zeroize",
-    "rand_core",
-] }
-humantime = "2.1.0"
-memsecurity = { version = "2.1.0", features = ["symm_asymm", "random"] }
-tai64 = { version = "4.0.0", features = ["zeroize"] }
-x25519-dalek = { version = "2.0.0-rc.3", features = ["zeroize", "static_secrets", "getrandom"] }
-zeroize = "1.6.0"
+bytes = { version = "1.5.0", default-features = false }

@@ -1,8 +1,10 @@
-#![forbid(unsafe_code)]
-#![doc = include_str!("../README.md")]
+#![no_std]
+#![forbid(missing_docs)]
 
-mod constants;
-pub use constants::*;
+//! Extended Triple Diffie-Hellman algorithm.
 
-mod types;
-pub use types::*;
+mod parameters;
+pub use parameters::*;
+
+mod errors;
+pub use errors::*;
